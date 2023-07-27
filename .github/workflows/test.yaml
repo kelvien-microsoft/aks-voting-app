@@ -5,8 +5,8 @@ name: test
             - master
     workflow_dispatch: {}
 env:
-    ACR_RESOURCE_GROUP: portal-cli-demo
-    AZURE_CONTAINER_REGISTRY: portaldemoacr
+    ACR_RESOURCE_GROUP: acrworkflow1690429475043
+    AZURE_CONTAINER_REGISTRY: portalclidemoacr
     CLUSTER_NAME: AKS
     CLUSTER_RESOURCE_GROUP: portal-cli-demo
     CONTAINER_NAME: voting-app
