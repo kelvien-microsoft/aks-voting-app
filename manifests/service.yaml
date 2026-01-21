@@ -4,10 +4,10 @@ metadata:
   name: voting-app
   namespace: voting-app
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: voting-app
   ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000
+    - name: app
+      port: 3000        # Service port
+      targetPort: 3000  # Container port
