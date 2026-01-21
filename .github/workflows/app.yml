@@ -1,4 +1,4 @@
-name: voting-app
+name: voting-app-app
 "on":
     push:
         branches:
@@ -26,4 +26,4 @@ jobs:
                 subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
                 tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             - name: Build and push image to ACR
-run: az acr build --image voting-app:${{ github.sha }} --registry ${{ env.AZURE_CONTAINER_REGISTRY }} -g ${{ env.ACR_RESOURCE_GROUP }} -f src/app/2.0/Dockerfile src/app/2.0
+run: az acr build --image voting-app-app:${{ github.sha }} --registry ${{ env.AZURE_CONTAINER_REGISTRY }} -g ${{ env.ACR_RESOURCE_GROUP }} -f src/app/2.0/Dockerfile src/app/2.0
