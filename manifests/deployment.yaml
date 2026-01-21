@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: voting-app
-          image: portaldemoacr.azurecr.io/voting-app:latest
+          image: khidayatacr202512.azurecr.io/voting-app:latest
           ports:
             - containerPort: 3000
