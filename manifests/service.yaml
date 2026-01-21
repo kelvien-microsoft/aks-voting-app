@@ -9,5 +9,5 @@ spec:
     app: voting-app
   ports:
     - name: app
-      port: 3000        # Service port
-      targetPort: 3000  # Container port
+      port: 8080        # Service port
+      targetPort: 8080  # Container port
